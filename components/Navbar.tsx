@@ -83,39 +83,6 @@ export function Navbar() {
               Code Chapters
             </span>
           </Link>
-
-          {/* Studio separator + subtitle (gracefully blooms in when docked) */}
-          <motion.span
-            data-nav-sub="true"
-            initial={isInstant ? { opacity: 0.6, x: 0 } : { opacity: 0, x: -6 }}
-            animate={splashFinished ? { opacity: 0.6, x: 0 } : { opacity: 0, x: -6 }}
-            transition={isInstant ? { duration: 0 } : { duration: 0.5, delay: 0.05, ease: easeSmooth }}
-            className="hidden md:flex items-center gap-2 ml-2 select-none"
-          >
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <rect
-                x="4.25"
-                y="0"
-                width="1.5"
-                height="10"
-                rx="0.75"
-                fill="#222"
-                style={{ transform: "rotate(40deg)", transformOrigin: "center" }}
-              />
-              <rect
-                x="0"
-                y="4.25"
-                width="10"
-                height="1.5"
-                rx="0.75"
-                fill="#222"
-                style={{ transform: "rotate(40deg)", transformOrigin: "center" }}
-              />
-            </svg>
-            <span className="text-[13px] text-charcoal/70 font-normal tracking-tight">
-              Web Design Studio
-            </span>
-          </motion.span>
         </div>
 
         {/* Desktop nav links (fade in when docked) */}

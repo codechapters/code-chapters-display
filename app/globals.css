@@ -56,7 +56,7 @@ html.intro-seen [data-hero-bg="true"] {
 
 html.intro-seen [data-hero-pill="true"] {
   opacity: 1 !important;
-  transform: rotate(-1.5deg) scale(1) !important;
+  transform: scale(1) !important;
 }
 
 html.intro-seen [data-marquee-wrap="true"] {

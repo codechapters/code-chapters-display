@@ -73,7 +73,7 @@ export function ContactSection() {
       `Hi Code Chapters,\n\nName / Brand: ${formData.name}\nEmail / Contact: ${formData.contactInfo}\nService Needed: ${formData.service}\n\nProject Details:\n${formData.message || "(No additional notes provided)"}\n\n---\nSent from codechapters.com`
     );
 
-    const mailtoUrl = `mailto:hello@codechapters.com?subject=${subject}&body=${body}`;
+    const mailtoUrl = `mailto:info@codechapters.com?subject=${subject}&body=${body}`;
 
     // Open user's email client directly
     window.location.href = mailtoUrl;
@@ -143,7 +143,7 @@ export function ContactSection() {
                     Email Client Opened!
                   </h3>
                   <p className="text-white/70 text-sm max-w-sm mx-auto leading-relaxed">
-                    Your default email client has been launched with your project inquiry pre-filled to <strong>hello@codechapters.com</strong>.
+                    Your default email client has been launched with your project inquiry pre-filled to <strong>info@codechapters.com</strong>.
                   </p>
 
                   <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -178,7 +178,7 @@ export function ContactSection() {
                       Tell us about your project
                     </h3>
                     <p className="text-xs sm:text-sm text-white/50">
-                      Submit this brief to launch your email directly to <strong>hello@codechapters.com</strong>.
+                      Submit this brief to launch your email directly to <strong>info@codechapters.com</strong>.
                     </p>
                   </div>
 
@@ -284,7 +284,7 @@ export function ContactSection() {
                       type="submit"
                       className="min-h-[50px] w-full py-3.5 px-3 sm:px-6 rounded-xl bg-white text-charcoal hover:bg-neutral-200 active:scale-[0.99] font-bold text-xs sm:text-base transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
                     >
-                      <span>Send to hello@codechapters.com</span>
+                      <span>Send to info@codechapters.com</span>
                       <Send className="w-4 h-4 ml-1 shrink-0" />
                     </button>
                     <p className="text-center text-[11px] text-white/40 mt-3">
