@@ -123,10 +123,10 @@ export function Footer() {
             </span>
             <div className="space-y-2 text-sm text-white/70">
               <a
-                href="mailto:info@codechapters.com"
+                href="mailto:contact@codechapters.com"
                 className="font-mono text-xs text-white/80 hover:text-white transition-colors block break-all"
               >
-                info@codechapters.com
+                contact@codechapters.com
               </a>
               <p className="text-xs text-white/50">
                 Worldwide remote delivery. 24h SLA.

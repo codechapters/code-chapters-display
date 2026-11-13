@@ -54,8 +54,8 @@ export function Hero() {
           
           {/* ================= LEFT COLUMN: Typography & CTAs ================= */}
           <div className="w-full lg:w-auto lg:shrink-0 flex flex-col justify-center relative z-20">
-            {/* Pill Capsule: Pre-headline */}
-            <div className="overflow-hidden mb-5 sm:mb-8">
+            {/* Pill Capsule: Pre-headline (Desktop & Tablet only, hidden on Mobile) */}
+            <div className="hidden sm:block overflow-hidden mb-8">
               <motion.div
                 data-hero-mask="true"
                 custom={0.04}
@@ -63,16 +63,14 @@ export function Hero() {
                 initial="hidden"
                 animate={ready ? "visible" : "hidden"}
               >
-                <div className="inline-flex items-center gap-2 sm:gap-2.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/95 border border-black/[0.08] shadow-[0_2px_10px_rgba(0,0,0,0.03)] backdrop-blur-sm max-w-full">
-                  <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-blue-600 shrink-0" />
-                  <p className="text-[11px] sm:text-[14px] leading-snug">
-                    <span className="font-semibold text-charcoal">
-                      You don&apos;t need just a website
-                    </span>{" "}
-                    <span className="font-normal text-charcoal/50">
-                      — you need a chapter.
-                    </span>
-                  </p>
+                <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/95 border border-black/[0.08] shadow-[0_2px_10px_rgba(0,0,0,0.03)] backdrop-blur-sm">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 shrink-0" />
+                  <span className="text-xs sm:text-[14px] font-semibold text-charcoal">
+                    You don&apos;t need just a website
+                  </span>
+                  <span className="text-xs sm:text-[14px] font-normal text-charcoal/50">
+                    — you need a chapter.
+                  </span>
                 </div>
               </motion.div>
             </div>
